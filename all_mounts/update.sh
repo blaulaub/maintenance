@@ -11,7 +11,7 @@ RESULT_FILE="$TARGET_HOST.txt"
 # Prepare version control
 #
 
-git fetch master
+git fetch origin master
 git checkout master
 
 #
