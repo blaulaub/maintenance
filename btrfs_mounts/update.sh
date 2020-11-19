@@ -25,7 +25,7 @@ cd "${TARGET_HOST}"
 
 cat "$ALL_MOUNTS" | egrep "^\S+ on \S+ type btrfs" | cut -d' ' -f3 | while read MOUNTPOINT; do
   TMPFILE="$(mktemp wip.XXXXXXX)"
-  ssh -n "${AGENT_USER}@${TARGET_HOST}" sudo btrfs show "$MOUNTPOINT" > $TMPFILE
+  ssh -n "${AGENT_USER}@${TARGET_HOST}" sudo btrfs subvolume show "$MOUNTPOINT" > $TMPFILE
   UUID="$(cat $TMPFILE | sed -e 's/\s\+/ /g' | sed -e 's/^\s*//g' | grep '^UUID:' | cut -d' ' -f2)"
   mv $TMPFILE $UUID
 done
