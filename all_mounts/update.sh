@@ -13,6 +13,7 @@ RESULT_FILE="$TARGET_HOST.txt"
 
 git fetch origin master
 git checkout master
+git pull
 
 #
 #  Execute

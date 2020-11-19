@@ -11,6 +11,7 @@ test -z "$TARGET_HOST" && exit -1
 
 git fetch origin master
 git checkout master
+git pull
 
 #
 #  Execute
