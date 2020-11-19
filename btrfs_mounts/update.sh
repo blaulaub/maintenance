@@ -17,7 +17,7 @@ git checkout master
 #
 
 ALL_MOUNTS="$PWD/all_mounts/$TARGET_HOST.txt"
-test -f "$ALL_MOUNTS" && exit -1
+test -f "$ALL_MOUNTS" ||  exit -1
 
 cd "$(dirname "$0")" || exit -1
 test -d "${TARGET_HOST}" || mkdir "${TARGET_HOST}"
