@@ -21,7 +21,9 @@ test -f "$ALL_MOUNTS" ||  exit -1
 
 cd "$(dirname "$0")" || exit -1
 test -d "${TARGET_HOST}" || mkdir "${TARGET_HOST}"
-cd "${TARGET_HOST}"
+cd "${TARGET_HOST}" || exit -1
+
+rm *-*-*-*-*
 
 cat "$ALL_MOUNTS" | egrep "^\S+ on \S+ type btrfs" | cut -d' ' -f3 | while read MOUNTPOINT; do
   TMPFILE="$(mktemp wip.XXXXXXX)"
@@ -31,7 +33,7 @@ cat "$ALL_MOUNTS" | egrep "^\S+ on \S+ type btrfs" | cut -d' ' -f3 | while read 
   cat $TMPFILE| tail +2  >> $UUID
   rm $TMPFILE
 
-  git add $MOUNTPOINT
+  git add $UUID
 done
 
 #
