@@ -1,0 +1,19 @@
+/
+	Name: 			<FS_TREE>
+	UUID: 			7a8f3b79-880a-41b6-b22f-3c381e98113a
+	Parent UUID: 		-
+	Received UUID: 		-
+	Creation time: 		2020-05-16 09:06:53 +0200
+	Subvolume ID: 		5
+	Generation: 		149778
+	Gen at creation: 	0
+	Parent ID: 		0
+	Top level ID: 		0
+	Flags: 			-
+	Snapshot(s):
+				backup/pfannenstiel.patchcode.ch/pfannenstiel.patchcode.ch_20201026T085602Z
+				backup/pfannenstiel.patchcode.ch/pfannenstiel.patchcode.ch_20201108T144504Z
+				backup/pfannenstiel.patchcode.ch/pfannenstiel.patchcode.ch_20201114T214802Z
+				backup/pfannenstiel.patchcode.ch/pfannenstiel.patchcode.ch_20201116T215302Z
+				backup/pfannenstiel.patchcode.ch/pfannenstiel.patchcode.ch_20201117T215402Z
+				backup/pfannenstiel.patchcode.ch/pfannenstiel.patchcode.ch_20201118T215702Z
