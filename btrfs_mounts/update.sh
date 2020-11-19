@@ -27,5 +27,17 @@ cat "$ALL_MOUNTS" | egrep "^\S+ on \S+ type btrfs" | cut -d' ' -f3 | while read 
   TMPFILE="$(mktemp wip.XXXXXXX)"
   ssh -n "${AGENT_USER}@${TARGET_HOST}" sudo btrfs subvolume show "$MOUNTPOINT" > $TMPFILE
   UUID="$(cat $TMPFILE | sed -e 's/\s\+/ /g' | sed -e 's/^\s*//g' | grep '^UUID:' | cut -d' ' -f2)"
-  mv $TMPFILE $UUID
+  echo $MOUNTPOINT > $UUID
+  cat $TMPFILE| tail +2  >> $UUID
+  rm $TMPFILE
+
+  git add $MOUNTPOINT
 done
+
+#
+#  Commit and Push
+#
+
+git commit -a -m "$(basename "$0"), $TARGET_HOST, $(date)"
+git pull --rebase=true
+git push
