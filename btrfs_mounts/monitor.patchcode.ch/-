@@ -1,0 +1,20 @@
+/
+	Name: 			<FS_TREE>
+	UUID: 			-
+	Parent UUID: 		-
+	Received UUID: 		-
+	Creation time: 		-
+	Subvolume ID: 		5
+	Generation: 		2600708
+	Gen at creation: 	0
+	Parent ID: 		0
+	Top level ID: 		0
+	Flags: 			-
+	Snapshot(s):
+				var/log
+				backup/monitor.patchcode.ch/monitor.patchcode.ch_20201026T085303Z
+				backup/monitor.patchcode.ch/monitor.patchcode.ch_20201108T144103Z
+				backup/monitor.patchcode.ch/monitor.patchcode.ch_20201114T214402Z
+				backup/monitor.patchcode.ch/monitor.patchcode.ch_20201116T214903Z
+				backup/monitor.patchcode.ch/monitor.patchcode.ch_20201117T215003Z
+				backup/monitor.patchcode.ch/monitor.patchcode.ch_20201118T215203Z
