@@ -1,0 +1,19 @@
+/
+	Name: 			root
+	UUID: 			f14aad3b-1eb2-234e-9c73-b79d37683f51
+	Parent UUID: 		a93816f4-49a4-a44d-8805-b121bb47a61d
+	Received UUID: 		-
+	Creation time: 		2020-05-22 19:54:02 +0200
+	Subvolume ID: 		288
+	Generation: 		1743902
+	Gen at creation: 	73300
+	Parent ID: 		262
+	Top level ID: 		262
+	Flags: 			-
+	Snapshot(s):
+				backup/wollishofen.patchcode.ch/wollishofen.patchcode.ch_20200415T174034Z/backup/root/backup/wollishofen.patchcode.ch/wollishofen.patchcode.ch_20201026T090103Z
+				backup/wollishofen.patchcode.ch/wollishofen.patchcode.ch_20200415T174034Z/backup/root/backup/wollishofen.patchcode.ch/wollishofen.patchcode.ch_20201108T144803Z
+				backup/wollishofen.patchcode.ch/wollishofen.patchcode.ch_20200415T174034Z/backup/root/backup/wollishofen.patchcode.ch/wollishofen.patchcode.ch_20201114T215404Z
+				backup/wollishofen.patchcode.ch/wollishofen.patchcode.ch_20200415T174034Z/backup/root/backup/wollishofen.patchcode.ch/wollishofen.patchcode.ch_20201116T215803Z
+				backup/wollishofen.patchcode.ch/wollishofen.patchcode.ch_20200415T174034Z/backup/root/backup/wollishofen.patchcode.ch/wollishofen.patchcode.ch_20201117T220003Z
+				backup/wollishofen.patchcode.ch/wollishofen.patchcode.ch_20200415T174034Z/backup/root/backup/wollishofen.patchcode.ch/wollishofen.patchcode.ch_20201118T220305Z
