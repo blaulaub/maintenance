@@ -1,0 +1,19 @@
+/
+	Name: 			root
+	UUID: 			8f0a5f9d-b2f7-4948-9599-e5d01d6ecc0f
+	Parent UUID: 		a625725a-2342-0240-8ecb-e3ee9b878961
+	Received UUID: 		-
+	Creation time: 		2019-07-14 22:05:07 +0200
+	Subvolume ID: 		327
+	Generation: 		1913816
+	Gen at creation: 	1064817
+	Parent ID: 		5
+	Top level ID: 		5
+	Flags: 			-
+	Snapshot(s):
+				backup/root/backup/smtp.patchcode.ch/smtp.patchcode.ch_20201022T015705Z
+				backup/root/backup/smtp.patchcode.ch/smtp.patchcode.ch_20201109T211205Z
+				backup/root/backup/smtp.patchcode.ch/smtp.patchcode.ch_20201113T212005Z
+				backup/root/backup/smtp.patchcode.ch/smtp.patchcode.ch_20201116T212404Z
+				backup/root/backup/smtp.patchcode.ch/smtp.patchcode.ch_20201117T212605Z
+				backup/root/backup/smtp.patchcode.ch/smtp.patchcode.ch_20201118T212805Z
