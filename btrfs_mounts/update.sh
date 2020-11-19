@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 # check variables are set
 test -z "$AGENT_USER" && exit -1
