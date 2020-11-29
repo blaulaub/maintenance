@@ -31,7 +31,7 @@ for MOUNT in ${ALL_MOUNTS[@]}; do
 	| egrep '^ID [0-9]+ gen [0-9]+ top level [0-9]+ path .*' \
 	| while read LINE; do
 	  SUB_PATH=$(echo $LINE | cut -d" " -f9-)
-	  SUB_MOUNT=$(realpath "${MOUNTPOINT}/${SUB_PATH}")
+	  SUB_MOUNT=$(ssh -n "${AGENT_USER}@${TARGET_HOST}" sudo realpath "${MOUNTPOINT}/${SUB_PATH}")
 	  if [ -d "${SUB_MOUNT}" ]; then
 	    echo ${SUB_MOUNT};
 	  fi
