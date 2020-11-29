@@ -27,7 +27,7 @@ cd "$(dirname "$0")" || exit -1
 
 for MOUNT in ${ALL_MOUNTS[@]}; do
   head -1 ${MOUNT} | while read MOUNTPOINT; do
-    sudo btrfs subvolume list ${MOUNTPOINT} \
+    ssh -n "${AGENT_USER}@${TARGET_HOST}" sudo btrfs subvolume list ${MOUNTPOINT} \
 	| egrep '^ID [0-9]+ gen [0-9]+ top level [0-9]+ path .*' \
 	| while read LINE; do
 	  SUB_PATH=$(echo $LINE | cut -d" " -f9-)
@@ -37,7 +37,7 @@ for MOUNT in ${ALL_MOUNTS[@]}; do
 	  fi
 	  done \
 	| while read LINE; do
-      sudo btrfs subvolume show "${LINE}" \
+      ssh -n "${AGENT_USER}@${TARGET_HOST}" sudo btrfs subvolume show "${LINE}" \
       | tr '\n' ';' \
       | sed -e 's/\s\+/ /g' \
       | sed -e 's/;\s\+/;/g' \
