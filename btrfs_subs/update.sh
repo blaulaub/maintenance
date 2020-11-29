@@ -7,7 +7,7 @@ test -z "$AGENT_USER" && exit -1
 test -z "$TARGET_HOST" && exit -1
 
 # run some other script before, to refresh input data
-#./btrfs_mounts/update.sh || exit -1
+./btrfs_mounts/update.sh || exit -1
 
 #
 # Prepare version control
